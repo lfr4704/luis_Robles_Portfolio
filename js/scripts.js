@@ -1,5 +1,7 @@
-$( document ).ready( function () {
+$( document ).ready(function() { 
 
-  console.log("Hello world!");
 
-});
+		
+		
+
+}); //this is how you end jquery
