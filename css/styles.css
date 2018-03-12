@@ -28,15 +28,17 @@ body {
 
 /* this is the grid to put photos galleries in div*/
 .photos {
-  margin: 20px 0px;
+  margin: 40px;
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 300px 300px;
-  grid-gap: 5px;
+  grid-gap: 40px;
+
 }
 
+
 .photos > div {
-  background-color: #eee;
+  background-color: #808080;
   background-repeat: no-repeat;
   background-size: cover;
 }
