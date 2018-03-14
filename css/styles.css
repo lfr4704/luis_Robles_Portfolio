@@ -82,6 +82,40 @@ ul {
   grid-row: 2 / span 1;
 }
 
+/* this is to style project section divs */
+.image-style{
+	position: relative; /* this positions the text in span over the current element*/
+}
+
+span.text-content { /*this styles the text in the outer span to give it a background color and transition effects*/
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 0;/* this makes the text transparent*/
+  -webkit-transition: opacity 500ms; /* -webkit, -moz, -o are browser prefixes*/
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+div.image-style:hover span.text-content {
+  opacity: 1 /*this makes text visible(opaque) on hover*/
+}
+
+span.text-content span { /* this is for the inner span*/
+	display: table-cell;/* table-cell. That lets me use the vertical-align attribute to place my text right in the middle of the image*/
+	text-align: center;
+	vertical-align: middle;
+}
+
+
+
 /* Conatct start */
 
         .header-title
@@ -90,7 +124,7 @@ ul {
           font-family: sans-serif;
         
         }
- .title
+ 		.title
         {
           text-align: center;
           font-family: sans-serif;
